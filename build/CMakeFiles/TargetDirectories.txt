@@ -1,0 +1,7 @@
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/cgpa_calculator.dir
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/edit_cache.dir
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/rebuild_cache.dir
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/list_install_components.dir
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/install.dir
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/install/local.dir
+C:/Users/ADMIN/Cal_GPA/build/CMakeFiles/install/strip.dir
