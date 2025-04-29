@@ -41,17 +41,14 @@ void createGradingSystem();
 void loadGradingSystem();
 void saveGradingSystem(const GradingSystem& system);
 
-// Main function
 int main(int argc, char* argv[]) {
     std::cout << "CGPA Calculator" << std::endl;
     std::cout << "===============" << std::endl;
     
-    // Add your CGPA calculation logic here
     
     return 0;
 }
 
-// Implementation of menu functions
 void runMainMenu() {
     int choice;
     bool exit = false;
@@ -294,7 +291,6 @@ void addSemester(Student& student) {
     
     std::string name = Utils::getStringInput("Enter semester name (e.g., Fall 2023): ");
     
-    // Create and add the new semester
     Semester newSemester(name);
     student.addSemester(newSemester);
     
@@ -318,7 +314,6 @@ void manageSemester(Student& student) {
         return;
     }
     
-    // Get the selected semester (need to use a pointer since we're modifying the semester)
     Semester* semester = student.getSemesterByIndex(choice - 1);
     if (semester != nullptr) {
         runSemesterMenu(student, semester);

@@ -166,7 +166,6 @@ std::string Utils::getGradeInput(const std::string& prompt, const GradingSystem&
 }
 
 int Utils::generateUniqueId() {
-    // Use current time and random number to generate a unique ID
     static std::mt19937 gen(std::chrono::high_resolution_clock::now().time_since_epoch().count());
     std::uniform_int_distribution<int> dist(1000, 9999);
     return dist(gen);

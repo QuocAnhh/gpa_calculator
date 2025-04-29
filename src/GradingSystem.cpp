@@ -56,7 +56,6 @@ void GradingSystem::addGrade(const std::string& grade, double points) {
 
 double GradingSystem::getGradePoints(const std::string& grade) const {
     std::string upperGrade = grade;
-    // Convert to uppercase for case-insensitive comparison
     for (char& c : upperGrade) {
         c = std::toupper(c);
     }

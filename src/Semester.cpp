@@ -72,20 +72,16 @@ Semester Semester::deserialize(const std::string& data) {
     std::string token, name;
     int id, courseCount;
     
-    // Parse id
     std::getline(ss, token, '|');
     id = std::stoi(token);
     
-    // Parse name
     std::getline(ss, name, '|');
     
-    // Parse course count
     std::getline(ss, token, '|');
     courseCount = std::stoi(token);
     
     Semester semester(id, name);
     
-    // Parse courses
     for (int i = 0; i < courseCount; i++) {
         std::string courseData;
         std::getline(ss, courseData, '|');

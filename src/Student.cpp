@@ -115,23 +115,18 @@ Student Student::deserialize(const std::string& data) {
     std::string name, id, token, gradingSystemData;
     int semesterCount;
     
-    // Parse name
     std::getline(ss, name, '|');
     
-    // Parse id
     std::getline(ss, id, '|');
     
-    // Parse semester count
     std::getline(ss, token, '|');
     semesterCount = std::stoi(token);
     
-    // Parse grading system
     std::getline(ss, gradingSystemData, '|');
     GradingSystem gradingSystem = GradingSystem::deserialize(gradingSystemData);
     
     Student student(name, id, gradingSystem);
     
-    // Parse semesters
     for (int i = 0; i < semesterCount; i++) {
         std::string semesterData;
         std::getline(ss, semesterData, '|');
